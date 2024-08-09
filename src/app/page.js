@@ -5,7 +5,14 @@ import {
   handleButtion,
   lightBlueBtn,
   svg,
-} from "../components/button/buttonMetadata.jsx";
+} from "../components/button/buttonMetadata.jsx"; 1
+
+import "../styles/emailAddressInput.css";
+import EmailAddressInput from "../components/emailAddressInput/emailAddressInput.jsx";
+import {
+  lightGrayEmailBox,
+  placeholderClass
+} from "../components/emailAddressInput/emailAddressInputMetadata.jsx";
 
 export default function Home() {
   const session = async () => {
@@ -26,6 +33,13 @@ export default function Home() {
           btnLabel={lightBlueBtn.btnLabel}
           svg={svg}
           handleButtion={handleButtion}
+        />
+      </div>
+      <div className="absolute top-15 right-40">
+        <EmailAddressInput
+          emailBoxLabel={lightGrayEmailBox.emailBoxLabel}
+          style={lightGrayEmailBox.style}
+          placeholderClass={placeholderClass.className}
         />
       </div>
     </main>
