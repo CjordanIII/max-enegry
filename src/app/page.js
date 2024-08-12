@@ -24,6 +24,14 @@ import {
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
 
+import PasswordInput from "../components/password/passwordInputs.jsx";
+import {
+  lightGrayBox,
+  passwordConfirm,
+} from "../components/password/passwordInputsMetadata.jsx";
+
+
+
 export default function Home() {
   const session = async () => {
     const session = await getServerSession();
@@ -93,6 +101,18 @@ export default function Home() {
           btnLabel={SignUp.btnLabel}
           svg={noSvg}
           handleButtion={handleSignUpButtion}
+        />
+      </div>
+      <div className="absolute top-15 right-40 space-y-4">
+        <PasswordInput
+          label={lightGrayBox.label}
+          inputClassName={lightGrayBox.inputClassName}
+          labelClassName={lightGrayBox.labelClassName}
+        />
+        <PasswordInput
+          label={passwordConfirm.label}
+          inputClassName={passwordConfirm.inputClassName}
+          labelClassName={passwordConfirm.labelClassName}
         />
       </div>
     </main>
