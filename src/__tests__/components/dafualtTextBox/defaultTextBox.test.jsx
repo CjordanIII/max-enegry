@@ -20,5 +20,23 @@ describe("textbox test", () => {
         const input = screen.getByPlaceholderText(lightGrayTextBox.textBoxLabel);
         await waitFor(() => expect(input).toBeInTheDocument());
     });
+    
+    it("should have the same input and output value", () => {
+        const userValue = "Some Name";
+
+        render(
+            <DefaultTextBox
+              style={lightGrayTextBox.style}
+              textBoxLabel={lightGrayTextBox.textBoxLabel}
+              className={placeholderColor.className}
+            />
+          );
+
+          const inputElement = screen.getByPlaceholderText(lightGrayTextBox.textBoxLabel);
+
+          fireEvent.change(inputElement, { target: { value: userValue } });
+          
+          expect(inputElement.value).toBe(userValue);
+    });
 });
 
