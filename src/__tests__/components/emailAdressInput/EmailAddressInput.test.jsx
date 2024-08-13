@@ -1,7 +1,6 @@
 import EmailAddressInput from "@/components/emailAddressInput/EmailAddressInput";
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-
 import {
   lightGrayEmailBox,
   placeholderClass,
@@ -21,7 +20,9 @@ describe("Email text box test", () => {
   });
 
   it("should have the same input and output value", () => {
-    const userValue = "example@gmail.com";
+    const email = "example@gmail.com";
+    const notEmail = "john doe";
+    const empty = "";
 
     render(
       <EmailAddressInput
@@ -35,8 +36,16 @@ describe("Email text box test", () => {
       lightGrayEmailBox.emailBoxLabel
     );
 
-    fireEvent.change(inputElement, { target: { value: userValue } });
+    // email test
+    fireEvent.change(inputElement, { target: { value: email } });
+    expect(inputElement.value).toBe(email);
 
-    expect(inputElement.value).toBe(userValue);
+    // non-email test
+    fireEvent.change(inputElement, { target: { value: notEmail } });
+    expect(inputElement.value).toBe(notEmail);
+
+    // empty test
+    fireEvent.change(inputElement, { target: { value: empty } });
+    expect(inputElement.value).toBe(empty);
   });
 });
