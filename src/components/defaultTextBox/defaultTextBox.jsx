@@ -6,7 +6,7 @@ const DefaultTextBox = ({ textBoxLabel, style, placeholderClass }) => {
             <input
                 type="text"
                 className={`${style} ${placeholderClass}`}
-                placeholder={textBoxLabel}
+                placeholder={`${textBoxLabel}`}
             />
         </form>
     );
