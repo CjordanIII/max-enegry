@@ -5,14 +5,15 @@ import {
   handleButtion,
   lightBlueBtn,
   svg,
-} from "../components/button/buttonMetadata.jsx"; 1
+} from "../components/button/buttonMetadata.jsx";
+1;
 
-import "../styles/emailAddressInput.css";
-import EmailAddressInput from "../components/emailAddressInput/emailAddressInput.jsx";
+import EmailAddressInput from "../components/emailAddressInput/EmailAddressInput.jsx";
 import {
   lightGrayEmailBox,
-  placeholderClass
+  placeholderClass,
 } from "../components/emailAddressInput/emailAddressInputMetadata.jsx";
+import "../styles/emailAddressInput.css";
 
 export default function Home() {
   const session = async () => {

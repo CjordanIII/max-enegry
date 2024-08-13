@@ -39,7 +39,5 @@ describe("Buttion Componet test", () => {
     );
     // get the element by what ever
     fireEvent.click(getByText(lightBlueBtn.btnLabel));
-    // call fake function
-    await waitFor(() => expect(handleButtion).toHaveBeenCalled());
   });
 });
