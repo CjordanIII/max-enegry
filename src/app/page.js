@@ -24,11 +24,19 @@ import {
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
 
+import "../styles/defaultTextBox.css";
+import DefaultTextBox from "../components/defaultTextBox/defaultTextBox.jsx";
+import {
+  lightGrayTextBox,
+  placeholderColor,
+} from "../components/defaultTextBox/defaultTextBoxMetadata.jsx";
+
 export default function Home() {
   const session = async () => {
     const session = await getServerSession();
     return session;
   };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <p>getServerSession Result</p>
@@ -93,6 +101,13 @@ export default function Home() {
           btnLabel={SignUp.btnLabel}
           svg={noSvg}
           handleButtion={handleSignUpButtion}
+        />
+      </div>
+      <div className="absolute top-15 right-40">
+        <DefaultTextBox
+          textBoxLabel={lightGrayTextBox.textBoxLabel}
+          style={lightGrayTextBox.style}
+          placeholderClass={placeholderColor.className}
         />
       </div>
     </main>
