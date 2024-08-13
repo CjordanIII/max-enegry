@@ -24,6 +24,13 @@ import {
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
 
+import Paper from "../components/paper/Paper.jsx";
+import {
+  babyBluePaper,
+  darkBluePaper,
+} from "../components/paper/paperMetadata.jsx";
+
+
 export default function Home() {
   const session = async () => {
     const session = await getServerSession();
@@ -94,6 +101,10 @@ export default function Home() {
           svg={noSvg}
           handleButtion={handleSignUpButtion}
         />
+      </div>
+      <div className="space-y-4">
+        <Paper style={babyBluePaper.style} paperLabel={babyBluePaper.paperLabel} />
+        <Paper style={darkBluePaper.style} paperLabel={darkBluePaper.paperLabel} />
       </div>
     </main>
   );
