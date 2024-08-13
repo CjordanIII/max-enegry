@@ -39,13 +39,17 @@ describe("Email text box test", () => {
     // email test
     fireEvent.change(inputElement, { target: { value: email } });
     expect(inputElement.value).toBe(email);
+    expect(inputElement.checkValidity()).toBe(true);
 
     // non-email test
     fireEvent.change(inputElement, { target: { value: notEmail } });
     expect(inputElement.value).toBe(notEmail);
-
+    //   check if input throws error when its not an email
+    expect(inputElement.checkValidity()).toBe(false);
     // empty test
     fireEvent.change(inputElement, { target: { value: empty } });
     expect(inputElement.value).toBe(empty);
+    //   check if input throws error when its empty
+    expect(inputElement.checkValidity()).toBe(false);
   });
 });
