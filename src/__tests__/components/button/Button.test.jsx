@@ -27,7 +27,7 @@ import {
   tryTaskeyFree,
 } from "../../../components/button/buttonMetadata";
 
-describe("Buttion Componet test", () => {
+describe("Button components test", () => {
   it("renders start today", async () => {
     render(
       <Button
