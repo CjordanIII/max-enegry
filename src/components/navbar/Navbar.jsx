@@ -10,6 +10,7 @@ const Navbar = () => {
     <nav className="bg-yellow-500 flex items-center justify-between p-4 fixed top-0 left-0 w-full shadow-md z-10">
       {/* logo */}
       <div className="flex items-center">
+        {/* Next has a Imge componet built in to optomise image just to let you know */}
         <Image
           src="/dom-white-logo.svg"
           alt="Dominion Energy"
