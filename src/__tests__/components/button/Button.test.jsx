@@ -7,7 +7,7 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 
 import {
   handleButtion,
-  lightBlueBtn,
+  startToday,
   svg,
 } from "../../../components/button/buttonMetadata";
 
@@ -15,13 +15,13 @@ describe("Buttion Componet test", () => {
   it("renders buttion", async () => {
     render(
       <Button
-        style={lightBlueBtn.style}
-        btnLabel={lightBlueBtn.btnLabel}
+        style={startToday.style}
+        btnLabel={startToday.btnLabel}
         svg={svg}
         handleButtion={handleButtion}
       />
     );
-    const buttion = screen.getByText(lightBlueBtn.btnLabel);
+    const buttion = screen.getByText(startToday.btnLabel);
 
     await waitFor(() => expect(buttion).toBeInTheDocument());
   });
@@ -30,15 +30,15 @@ describe("Buttion Componet test", () => {
     const handleButtion = jest.fn();
     const { getByText } = render(
       <Button
-        style={lightBlueBtn.style}
-        btnLabel={lightBlueBtn.btnLabel}
+        style={startToday.style}
+        btnLabel={startToday.btnLabel}
         svg={svg}
         // fake function
         handleButtion={handleButtion}
       />
     );
     // get the element by what ever
-    fireEvent.click(getByText(lightBlueBtn.btnLabel));
+    fireEvent.click(getByText(startToday.btnLabel));
     // call fake function
     await waitFor(() => expect(handleButtion).toHaveBeenCalled());
   });
