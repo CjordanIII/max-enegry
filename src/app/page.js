@@ -24,6 +24,8 @@ import {
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
 
+import Navbar from "../components/navbar/Navbar.jsx";
+
 export default function Home() {
   const session = async () => {
     const session = await getServerSession();
@@ -31,6 +33,9 @@ export default function Home() {
   };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+
+      <Navbar />
+
       <p>getServerSession Result</p>
       {session?.user?.name ? (
         <div>{session?.user?.name}</div>
