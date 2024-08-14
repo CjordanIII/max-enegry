@@ -23,6 +23,14 @@ import {
   svg,
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
+1;
+
+import EmailAddressInput from "../components/emailAddressInput/EmailAddressInput.jsx";
+import {
+  lightGrayEmailBox,
+  placeholderClass,
+} from "../components/emailAddressInput/emailAddressInputMetadata.jsx";
+import "../styles/emailAddressInput.css";
 
 
 import Paper from "../components/paper/Paper.jsx";
@@ -124,6 +132,13 @@ export default function Home() {
           placeholderClass={placeholderColor.className}
         />
 
+      </div>
+      <div className="absolute top-15 right-40">
+        <EmailAddressInput
+          emailBoxLabel={lightGrayEmailBox.emailBoxLabel}
+          style={lightGrayEmailBox.style}
+          placeholderClass={placeholderClass.className}
+        />
       </div>
     </main>
   );

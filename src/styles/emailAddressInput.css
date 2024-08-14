@@ -1,0 +1,10 @@
+.placeholder-color {
+    color: #043873; 
+    font-weight: bold;
+    padding-left: 3px; 
+}
+
+.placeholder-color::placeholder {
+    color: #043873; 
+    font-weight: bolder; 
+}  
