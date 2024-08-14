@@ -32,12 +32,21 @@ import {
 } from "../components/emailAddressInput/emailAddressInputMetadata.jsx";
 import "../styles/emailAddressInput.css";
 
+
+import Paper from "../components/paper/Paper.jsx";
+import {
+  babyBluePaper,
+  darkBluePaper,
+} from "../components/paper/paperMetadata.jsx";
+
+
 import "../styles/defaultTextBox.css";
 import DefaultTextBox from "../components/defaultTextBox/defaultTextBox.jsx";
 import {
   lightGrayTextBox,
   placeholderColor,
 } from "../components/defaultTextBox/defaultTextBoxMetadata.jsx";
+
 
 export default function Home() {
   const session = async () => {
@@ -111,12 +120,18 @@ export default function Home() {
           handleButtion={handleSignUpButtion}
         />
       </div>
+
+      <div className="space-y-4">
+        <Paper style={babyBluePaper.style} paperLabel={babyBluePaper.paperLabel} />
+        <Paper style={darkBluePaper.style} paperLabel={darkBluePaper.paperLabel} />
+
       <div className="absolute top-15 right-40">
         <DefaultTextBox
           textBoxLabel={lightGrayTextBox.textBoxLabel}
           style={lightGrayTextBox.style}
           placeholderClass={placeholderColor.className}
         />
+
       </div>
       <div className="absolute top-15 right-40">
         <EmailAddressInput
