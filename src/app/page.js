@@ -23,6 +23,30 @@ import {
   svg,
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
+1;
+
+import EmailAddressInput from "../components/emailAddressInput/EmailAddressInput.jsx";
+import {
+  lightGrayEmailBox,
+  placeholderClass,
+} from "../components/emailAddressInput/emailAddressInputMetadata.jsx";
+import "../styles/emailAddressInput.css";
+
+
+import Paper from "../components/paper/Paper.jsx";
+import {
+  babyBluePaper,
+  darkBluePaper,
+} from "../components/paper/paperMetadata.jsx";
+
+
+import "../styles/defaultTextBox.css";
+import DefaultTextBox from "../components/defaultTextBox/defaultTextBox.jsx";
+import {
+  lightGrayTextBox,
+  placeholderColor,
+} from "../components/defaultTextBox/defaultTextBoxMetadata.jsx";
+
 
 import PasswordInput from "../components/password/passwordInputs.jsx";
 import {
@@ -37,6 +61,7 @@ export default function Home() {
     const session = await getServerSession();
     return session;
   };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <p>getServerSession Result</p>
@@ -103,6 +128,7 @@ export default function Home() {
           handleButtion={handleSignUpButtion}
         />
       </div>
+
       <div className="absolute top-15 right-40 space-y-4">
         <PasswordInput
           label={lightGrayBox.label}
@@ -113,6 +139,26 @@ export default function Home() {
           label={passwordConfirm.label}
           inputClassName={passwordConfirm.inputClassName}
           labelClassName={passwordConfirm.labelClassName}
+
+
+      <div className="space-y-4">
+        <Paper style={babyBluePaper.style} paperLabel={babyBluePaper.paperLabel} />
+        <Paper style={darkBluePaper.style} paperLabel={darkBluePaper.paperLabel} />
+
+      <div className="absolute top-15 right-40">
+        <DefaultTextBox
+          textBoxLabel={lightGrayTextBox.textBoxLabel}
+          style={lightGrayTextBox.style}
+          placeholderClass={placeholderColor.className}
+        />
+
+      </div>
+      <div className="absolute top-15 right-40">
+        <EmailAddressInput
+          emailBoxLabel={lightGrayEmailBox.emailBoxLabel}
+          style={lightGrayEmailBox.style}
+          placeholderClass={placeholderClass.className}
+
         />
       </div>
     </main>
