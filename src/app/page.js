@@ -33,6 +33,7 @@ import {
 import "../styles/emailAddressInput.css";
 
 
+
 import Paper from "../components/paper/Paper.jsx";
 import {
   babyBluePaper,
@@ -40,12 +41,21 @@ import {
 } from "../components/paper/paperMetadata.jsx";
 
 
+
 import "../styles/defaultTextBox.css";
+
 import DefaultTextBox from "../components/defaultTextBox/defaultTextBox.jsx";
 import {
   lightGrayTextBox,
   placeholderColor,
 } from "../components/defaultTextBox/defaultTextBoxMetadata.jsx";
+import "../styles/defaultTextBox.css";
+
+import PasswordInput from "../components/password/passwordInputs.jsx";
+import {
+  lightGrayBox,
+  passwordConfirm,
+} from "../components/password/passwordInputsMetadata.jsx";
 
 
 export default function Home() {
@@ -55,7 +65,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <div className="flex min-h-screen flex-col items-center justify-between">
       <p>getServerSession Result</p>
       {session?.user?.name ? (
         <div>{session?.user?.name}</div>
@@ -121,9 +131,36 @@ export default function Home() {
         />
       </div>
 
+
       <div className="space-y-4">
         <Paper style={babyBluePaper.style} paperLabel={babyBluePaper.paperLabel} />
         <Paper style={darkBluePaper.style} paperLabel={darkBluePaper.paperLabel} />
+       </div>
+
+      <div className="absolute top-15 right-40 space-y-4">
+        <PasswordInput
+          label={lightGrayBox.label}
+          inputClassName={lightGrayBox.inputClassName}
+          labelClassName={lightGrayBox.labelClassName}
+        />
+        <PasswordInput
+          label={passwordConfirm.label}
+          inputClassName={passwordConfirm.inputClassName}
+          labelClassName={passwordConfirm.labelClassName}
+        />
+      </div>
+
+      <div className="space-y-4">
+        <Paper
+          style={babyBluePaper.style}
+          paperLabel={babyBluePaper.paperLabel}
+        />
+        <Paper
+          style={darkBluePaper.style}
+          paperLabel={darkBluePaper.paperLabel}
+        />
+      </div>
+
 
       <div className="absolute top-15 right-40">
         <DefaultTextBox
@@ -140,6 +177,6 @@ export default function Home() {
           placeholderClass={placeholderClass.className}
         />
       </div>
-    </main>
+    </div>
   );
 }
