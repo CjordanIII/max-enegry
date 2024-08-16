@@ -8,4 +8,10 @@ export const signInRegister = {
     btnLabel: "Sign in/Register",
 };
 
-
+export const navbarLinks = [
+    { name: "Home", href: "#" },
+    { name: "About Us", href: "#" },
+    { name: "FAQ", href: "#" },
+    { name: "Start/Stop Service", href: "#" },
+    { name: "Our Stories", href: "#" },
+];
