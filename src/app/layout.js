@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import NavMenu from "./components/NavMenu.jsx";
 import SessionProvider from "./components/SessionProvider.jsx";
 import "./globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default async function RootLayout({ children }) {
         <SessionProvider session={session}>
           <main>
             <NavMenu />
+
             {children}
           </main>
         </SessionProvider>

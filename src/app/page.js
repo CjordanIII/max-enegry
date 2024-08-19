@@ -32,15 +32,11 @@ import {
 } from "../components/emailAddressInput/emailAddressInputMetadata.jsx";
 import "../styles/emailAddressInput.css";
 
-
-
 import Paper from "../components/paper/Paper.jsx";
 import {
   babyBluePaper,
   darkBluePaper,
 } from "../components/paper/paperMetadata.jsx";
-
-
 
 import "../styles/defaultTextBox.css";
 
@@ -56,10 +52,7 @@ import {
   lightGrayBox,
   passwordConfirm,
 } from "../components/password/passwordInputsMetadata.jsx";
-
-
-import Navbar from "../components/navbar/Navbar.jsx";
-
+import "./globals.css";
 export default function Home() {
   const session = async () => {
     const session = await getServerSession();
@@ -67,14 +60,7 @@ export default function Home() {
   };
 
   return (
-
-    <main className="flex min-h-screen flex-col items-center justify-between">
-
-      <Navbar />
-
-
     <div className="flex min-h-screen flex-col items-center justify-between">
-
       <p>getServerSession Result</p>
       {session?.user?.name ? (
         <div>{session?.user?.name}</div>
@@ -140,11 +126,16 @@ export default function Home() {
         />
       </div>
 
-
       <div className="space-y-4">
-        <Paper style={babyBluePaper.style} paperLabel={babyBluePaper.paperLabel} />
-        <Paper style={darkBluePaper.style} paperLabel={darkBluePaper.paperLabel} />
-       </div>
+        <Paper
+          style={babyBluePaper.style}
+          paperLabel={babyBluePaper.paperLabel}
+        />
+        <Paper
+          style={darkBluePaper.style}
+          paperLabel={darkBluePaper.paperLabel}
+        />
+      </div>
 
       <div className="absolute top-15 right-40 space-y-4">
         <PasswordInput
@@ -170,14 +161,12 @@ export default function Home() {
         />
       </div>
 
-
       <div className="absolute top-15 right-40">
         <DefaultTextBox
           textBoxLabel={lightGrayTextBox.textBoxLabel}
           style={lightGrayTextBox.style}
           placeholderClass={placeholderColor.className}
         />
-
       </div>
       <div className="absolute top-15 right-40">
         <EmailAddressInput

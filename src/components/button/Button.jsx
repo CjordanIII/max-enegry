@@ -1,7 +1,7 @@
 "use client";
 import { ArrowRight } from "../../assets/icons/arrowRight.jsx";
 
-const Button = ({ style, btnLabel, svg, handleButtion }) => {
+const Button = ({ style, btnLabel, svg = false, handleButtion }) => {
   return (
     <button role="button" onClick={handleButtion} className={style}>
       {btnLabel}
