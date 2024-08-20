@@ -87,6 +87,16 @@ export const handleSignUpButtion = () => {
   "use client";
   console.log("working");
 };
+export const findYourSavings = {
+  style: `bg-sky-400 px-4 py-2 rounded-md text-white hover:bg-sky-300 active:bg-sky-950 ${
+    svg && "flex justify-center gap-2 items-center"
+  }`,
+  btnLabel: "Find your savings here!",
+};
+export const handlefindYourSavingsButtion = () => {
+  "use client";
+  console.log("working");
+};
 
 // dark blue
 
