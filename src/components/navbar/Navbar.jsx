@@ -13,7 +13,7 @@ const Navbar = () => {
     setShowNavbar((prev) => !prev);
   };
   return (
-    <nav className="bg-yellow-500 flex  items-center justify-between p-4 fixed top-0 left-0 w-full shadow-md z-10  ">
+    <nav className="bg-yellow-500 flex  items-center justify-between p-4 fixed top-0 left-0 w-full  ">
       {/* logo */}
 
       <Image
