@@ -73,7 +73,7 @@ const Footer = () => {
       <span className="flex justify-around text-white">
         <span className="flex justify-between gap-5">
           <Link href="#" target="_blank">
-            terms & privacy
+            Terms & privacy
           </Link>
           <Link href="#" target="_blank">
             Security
