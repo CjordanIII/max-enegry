@@ -72,16 +72,45 @@ const Footer = () => {
         </span>
       </div>
       <span className="flex justify-around text-white">
-        <Link href="#" target="_blank">
-          terms & privacy
-        </Link>
-        <Link href="#" target="_blank">
-          Security
-        </Link>
-        <Link href="#" target="_blank">
-          Status
-        </Link>
-        <p> &copy; Whitepace LLC.</p>
+        <span className="flex justify-between gap-5">
+          <Link href="#" target="_blank">
+            terms & privacy
+          </Link>
+          <Link href="#" target="_blank">
+            Security
+          </Link>
+          <Link href="#" target="_blank">
+            Status
+          </Link>
+          <p> &copy; Whitepace LLC.</p>
+        </span>
+        <span className="flex justify-between gap-5">
+          <Link href="#" target="_blank">
+            {" "}
+            <Image
+              src="./icons/Facebook-icon.svg"
+              width={15}
+              height={15}
+              alt="facebook logo"
+            />
+          </Link>
+          <Link href="#" target="_blank">
+            <Image
+              src="./icons/Twitter.svg"
+              width={30}
+              height={30}
+              alt="Twitter logo"
+            />
+          </Link>
+          <Link href="#" target="_blank">
+            <Image
+              src="./icons/Linkedin.svg"
+              width={30}
+              height={30}
+              alt="linkedin logo"
+            />
+          </Link>
+        </span>
       </span>
     </footer>
   );
