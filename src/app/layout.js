@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth";
 
 import { Inter } from "next/font/google";
-// import NavMenu from "./components/NavMenu.jsx";
+import NavMenu from "./components/NavMenu.jsx";
 import SessionProvider from "./components/SessionProvider.jsx";
 import "./globals.css";
 
@@ -19,9 +19,7 @@ export default async function RootLayout({ children }) {
       <body className={inter.className}>
         <SessionProvider session={session}>
           <main>
-
             <NavMenu />
-
 
             {children}
           </main>
