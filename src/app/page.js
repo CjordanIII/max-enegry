@@ -23,7 +23,6 @@ import {
   svg,
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
-1;
 
 import EmailAddressInput from "../components/emailAddressInput/EmailAddressInput.jsx";
 import {
@@ -46,7 +45,6 @@ import {
   placeholderColor,
 } from "../components/defaultTextBox/defaultTextBoxMetadata.jsx";
 import "../styles/defaultTextBox.css";
-
 
 import Footer from "../components/footer/Footer.jsx";
 
@@ -182,7 +180,6 @@ export default function Home() {
       </div>
 
       <Footer />
-
     </div>
   );
 }
