@@ -46,6 +46,7 @@ import {
 } from "../components/defaultTextBox/defaultTextBoxMetadata.jsx";
 import "../styles/defaultTextBox.css";
 
+
 import Footer from "../components/footer/Footer.jsx";
 
 import PasswordInput from "../components/password/passwordInputs.jsx";
@@ -58,6 +59,13 @@ import {
 import "./globals.css";
 
 
+
+import PasswordInput from "../components/password/passwordInputs.jsx";
+import {
+  lightGrayBox,
+  passwordConfirm,
+} from "../components/password/passwordInputsMetadata.jsx";
+import "./globals.css";
 export default function Home() {
   const session = async () => {
     const session = await getServerSession();
@@ -181,7 +189,9 @@ export default function Home() {
         />
       </div>
 
+
       <Footer />
+
     </div>
   );
 }

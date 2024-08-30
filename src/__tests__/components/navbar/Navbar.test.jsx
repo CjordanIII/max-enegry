@@ -1,3 +1,4 @@
+
 import MobileNavbar from "@/components/navbar/MobleNavbar";
 import Navbar from "@/components/navbar/Navbar";
 import "@testing-library/jest-dom";
@@ -14,10 +15,12 @@ jest.mock("next/router", () => ({
 }));
 jest.mock("next/link", () => {
   const link = ({ children, href }) => (
+
     <a href={href} onClick={() => window.location.assign(href)}>
       {children}
     </a>
   );
+
   return link;
 });
 
@@ -27,6 +30,7 @@ describe("Navbar Component", () => {
     mockSetShowNavbar.mockClear();
   });
   it("should render the Navbar with navigation links and buttons", () => {
+
     render(<Navbar />);
 
     // Check if all navigation links are rendered correctly
@@ -42,13 +46,17 @@ describe("Navbar Component", () => {
     expect(signInButton).toBeInTheDocument();
   });
 
+ld navigate to the correct page when a link is clicked', () => {
+
   it("should navigate to the correct page when a link is clicked", () => {
+
     const mockPush = jest.fn(); // Create a mock function for router.push
     useRouter.mockImplementation(() => ({
       push: mockPush, // Mock the push function
     }));
 
     render(<Navbar />);
+
 
     navbarLinks.forEach((link) => {
       const links = screen.getByText(link.name);
@@ -85,6 +93,7 @@ describe("Navbar Component", () => {
     expect(mockSetShowNavbar).toHaveBeenCalledWith(false);
   });
 });
+
 
 
 
