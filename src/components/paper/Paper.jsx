@@ -1,4 +1,5 @@
 "use client";
+
 const Paper = ({ style, paperLabel, width, height }) => {
   // 506
   return (
@@ -15,3 +16,4 @@ const Paper = ({ style, paperLabel, width, height }) => {
 };
 
 export default Paper;
+

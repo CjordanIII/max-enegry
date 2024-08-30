@@ -23,7 +23,6 @@ import {
   svg,
   tryTaskeyFree,
 } from "../components/button/buttonMetadata.jsx";
-1;
 
 import EmailAddressInput from "../components/emailAddressInput/EmailAddressInput.jsx";
 import {
@@ -46,6 +45,20 @@ import {
   placeholderColor,
 } from "../components/defaultTextBox/defaultTextBoxMetadata.jsx";
 import "../styles/defaultTextBox.css";
+
+
+import Footer from "../components/footer/Footer.jsx";
+
+import PasswordInput from "../components/password/passwordInputs.jsx";
+import {
+  lightGrayBox,
+  passwordConfirm,
+} from "../components/password/passwordInputsMetadata.jsx";
+
+
+import "./globals.css";
+
+
 
 import PasswordInput from "../components/password/passwordInputs.jsx";
 import {
@@ -175,6 +188,10 @@ export default function Home() {
           placeholderClass={placeholderClass.className}
         />
       </div>
+
+
+      <Footer />
+
     </div>
   );
 }
