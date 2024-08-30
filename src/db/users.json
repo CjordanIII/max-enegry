@@ -1,0 +1,35 @@
+[
+  {
+    "userId": "user1",
+    "personalInformation": {
+      "name": "John Doe",
+      "address": "123 Main St, Apt 4B, Springfield, IL 62704",
+      "contact": {
+        "phone": "+1-555-123-4567",
+        "email": "john.doe@example.com"
+      }
+    }
+  },
+  {
+    "userId": "user2",
+    "personalInformation": {
+      "name": "Jane Smith",
+      "address": "456 Elm St, Springfield, IL 62705",
+      "contact": {
+        "phone": "+1-555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    }
+  },
+  {
+    "userId": "user3",
+    "personalInformation": {
+      "name": "Emily Johnson",
+      "address": "789 Oak St, Springfield, IL 62706",
+      "contact": {
+        "phone": "+1-555-456-7890",
+        "email": "emily.johnson@example.com"
+      }
+    }
+  }
+]
