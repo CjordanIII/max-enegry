@@ -11,7 +11,6 @@ const MobileNavbar = ({ setShowNavbar, showNavbar }) => {
 
   const handleOutsideClick = useCallback(
     (e) => {
-      console.log(e.target.tagName);
       if (ref.current && !ref.current.contains(e.target)) {
         setShowNavbar(false); // Close navbar when clicking outside
       }
