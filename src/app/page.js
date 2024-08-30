@@ -56,7 +56,9 @@ import {
   passwordConfirm,
 } from "../components/password/passwordInputsMetadata.jsx";
 
+
 import "./globals.css";
+
 
 export default function Home() {
   const session = async () => {
