@@ -20,14 +20,25 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Running test
 
-To learn more about Next.js, take a look at the following resources:
+Playwrite test and jsst test are ran diffrently and are in two diffrent folders.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Playwrite test are in src/playwrite/e2e
+and will match the directry they are testing
+Jest test are in src/tests folder
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+to run test
+
+```bash
+npx playwrite test
+# or
+npm run test
+# or
+npm test:watch
+```
+
+The last two are for jest
 
 ## Deploy on Vercel
 
@@ -38,4 +49,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## auth video
 
 auth [video being used](https://www.youtube.com/watch?v=md65iBX5Gxg)
+
 # max-enegry

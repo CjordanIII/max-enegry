@@ -1,0 +1,414 @@
+[
+    {
+  "users": [
+    {
+      "userId": "user1",
+      "personalInformation": {
+        "name": "John Doe",
+        "address": "123 Main St, Apt 4B, Springfield, IL 62704",
+        "contact": {
+          "phone": "+1-555-123-4567",
+          "email": "john.doe@example.com"
+        }
+      },
+      "accountInformation": {
+        "accountNumber": "9876543210",
+        "serviceAddress": "123 Main St, Apt 4B, Springfield, IL 62704",
+        "billingHistory": [
+          {
+            "date": "2024-07-01",
+            "amount": "$120.45",
+            "status": "Paid"
+          },
+          {
+            "date": "2024-06-01",
+            "amount": "$110.30",
+            "status": "Paid"
+          }
+        ],
+        "paymentHistory": [
+          {
+            "date": "2024-07-05",
+            "amount": "$120.45",
+            "method": "Credit Card"
+          },
+          {
+            "date": "2024-06-10",
+            "amount": "$110.30",
+            "method": "Bank Transfer"
+          }
+        ]
+      },
+      "usageData": {
+        "currentMonthUsage": "350 kWh",
+        "previousMonthUsage": "340 kWh",
+        "peakUsageTimes": [
+          "2024-07-15T18:00:00Z",
+          "2024-07-16T19:00:00Z"
+        ]
+      },
+      "billingAndPaymentInformation": {
+        "currentBill": {
+          "amount": "$120.45",
+          "dueDate": "2024-07-15",
+          "status": "Pending"
+        },
+        "paymentMethods": [
+          "Credit Card",
+          "Bank Transfer"
+        ],
+        "outstandingBalance": "$120.45"
+      },
+      "serviceDetails": {
+        "typeOfService": "Electricity",
+        "servicePlan": "Standard Rate",
+        "serviceStartDate": "2023-05-01",
+        "serviceEndDate": "N/A"
+      },
+      "communicationPreferences": {
+        "preferredMethods": [
+          "Email",
+          "Text"
+        ],
+        "notificationSettings": {
+          "billingAlerts": true,
+          "outageNotifications": true
+        }
+      },
+      "meteringData": {
+        "lastMeterReading": "2024-07-01: 4500 kWh",
+        "smartMeter": true,
+        "meterMaintenance": [
+          {
+            "date": "2024-06-20",
+            "service": "Routine Check"
+          }
+        ]
+      },
+      "customerServiceInteractions": [
+        {
+          "date": "2024-07-10",
+          "interactionType": "Phone Call",
+          "notes": "Inquired about bill adjustment."
+        },
+        {
+          "date": "2024-06-15",
+          "interactionType": "Email",
+          "notes": "Reported power outage."
+        }
+      ],
+      "loginInformation": {
+        "username": "john.doe",
+        "passwordHash": "hashedPassword123",
+        "securityQuestions": [
+          {
+            "question": "What is your pet's name?",
+            "answerHash": "hashedAnswer123"
+          }
+        ],
+        "lastLogin": {
+          "time": "2024-07-05T08:30:00Z",
+          "ipAddress": "192.168.1.1"
+        }
+      },
+      "preferencesAndSettings": {
+        "paperlessBilling": true,
+        "autoPay": true,
+        "budgetBilling": {
+          "enabled": false,
+          "monthlyAmount": null
+        }
+      },
+      "energyEfficiencyProgram": {
+        "participation": "Energy Saver Program",
+        "incentives": [
+          {
+            "type": "Rebate",
+            "amount": "$50",
+            "description": "For purchasing a smart thermostat."
+          }
+        ]
+      },
+      "outageInformation": {
+        "recentOutages": [
+          {
+            "date": "2024-07-12",
+            "duration": "2 hours",
+            "restorationTime": "2024-07-12T16:00:00Z"
+          }
+        ],
+        "outageHistory": [
+          {
+            "date": "2024-06-22",
+            "duration": "1.5 hours",
+            "details": "Localized outage due to maintenance."
+          }
+        ]
+      }
+    },
+    {
+      "userId": "user2",
+      "personalInformation": {
+        "name": "Jane Smith",
+        "address": "456 Elm St, Springfield, IL 62705",
+        "contact": {
+          "phone": "+1-555-987-6543",
+          "email": "jane.smith@example.com"
+        }
+      },
+      "accountInformation": {
+        "accountNumber": "1234567890",
+        "serviceAddress": "456 Elm St, Springfield, IL 62705",
+        "billingHistory": [
+          {
+            "date": "2024-07-01",
+            "amount": "$85.75",
+            "status": "Paid"
+          },
+          {
+            "date": "2024-06-01",
+            "amount": "$90.00",
+            "status": "Paid"
+          }
+        ],
+        "paymentHistory": [
+          {
+            "date": "2024-07-06",
+            "amount": "$85.75",
+            "method": "Credit Card"
+          },
+          {
+            "date": "2024-06-12",
+            "amount": "$90.00",
+            "method": "Debit Card"
+          }
+        ]
+      },
+      "usageData": {
+        "currentMonthUsage": "280 kWh",
+        "previousMonthUsage": "275 kWh",
+        "peakUsageTimes": [
+          "2024-07-14T17:00:00Z",
+          "2024-07-16T18:30:00Z"
+        ]
+      },
+      "billingAndPaymentInformation": {
+        "currentBill": {
+          "amount": "$85.75",
+          "dueDate": "2024-07-15",
+          "status": "Pending"
+        },
+        "paymentMethods": [
+          "Credit Card",
+          "Debit Card"
+        ],
+        "outstandingBalance": "$85.75"
+      },
+      "serviceDetails": {
+        "typeOfService": "Electricity",
+        "servicePlan": "Green Energy Plan",
+        "serviceStartDate": "2022-03-01",
+        "serviceEndDate": "N/A"
+      },
+      "communicationPreferences": {
+        "preferredMethods": [
+          "Email"
+        ],
+        "notificationSettings": {
+          "billingAlerts": true,
+          "outageNotifications": true
+        }
+      },
+      "meteringData": {
+        "lastMeterReading": "2024-07-01: 3000 kWh",
+        "smartMeter": false,
+        "meterMaintenance": []
+      },
+      "customerServiceInteractions": [
+        {
+          "date": "2024-07-08",
+          "interactionType": "Email",
+          "notes": "Requested increase in service capacity."
+        }
+      ],
+      "loginInformation": {
+        "username": "jane.smith",
+        "passwordHash": "hashedPassword456",
+        "securityQuestions": [
+          {
+            "question": "What is your mother’s maiden name?",
+            "answerHash": "hashedAnswer456"
+          }
+        ],
+        "lastLogin": {
+          "time": "2024-07-06T09:00:00Z",
+          "ipAddress": "192.168.1.2"
+        }
+      },
+      "preferencesAndSettings": {
+        "paperlessBilling": false,
+        "autoPay": false,
+        "budgetBilling": {
+          "enabled": true,
+          "monthlyAmount": "$80"
+        }
+      },
+      "energyEfficiencyProgram": {
+        "participation": "Solar Panel Program",
+        "incentives": []
+      },
+      "outageInformation": {
+        "recentOutages": [
+          {
+            "date": "2024-07-10",
+            "duration": "1 hour",
+            "restorationTime": "2024-07-10T15:00:00Z"
+          }
+        ],
+        "outageHistory": []
+      }
+    },
+    {
+      "userId": "user3",
+      "personalInformation": {
+        "name": "Emily Johnson",
+        "address": "789 Oak St, Springfield, IL 62706",
+        "contact": {
+          "phone": "+1-555-456-7890",
+          "email": "emily.johnson@example.com"
+        }
+      },
+      "accountInformation": {
+        "accountNumber": "5678901234",
+        "serviceAddress": "789 Oak St, Springfield, IL 62706",
+        "billingHistory": [
+          {
+            "date": "2024-07-01",
+            "amount": "$95.20",
+            "status": "Paid"
+          },
+          {
+            "date": "2024-06-01",
+            "amount": "$98.50",
+            "status": "Paid"
+          }
+        ],
+        "paymentHistory": [
+          {
+            "date": "2024-07-04",
+            "amount": "$95.20",
+            "method": "Bank Transfer"
+          },
+          {
+            "date": "2024-06-05",
+            "amount": "$98.50",
+            "method": "Credit Card"
+          }
+        ]
+      },
+      "usageData": {
+        "currentMonthUsage": "320 kWh",
+        "previousMonthUsage": "310 kWh",
+        "peakUsageTimes": [
+          "2024-07-16T20:00:00Z",
+          "2024-07-17T21:00:00Z"
+        ]
+      },
+      "billingAndPaymentInformation": {
+        "currentBill": {
+          "amount": "$95.20",
+          "dueDate": "2024-07-15",
+          "status": "Pending"
+        },
+        "paymentMethods": [
+          "Bank Transfer",
+          "Credit Card"
+        ],
+        "outstandingBalance": "$95.20"
+      },
+      "serviceDetails": {
+        "typeOfService": "Gas",
+        "servicePlan": "Standard Rate",
+        "serviceStartDate": "2021-01-01",
+        "serviceEndDate": "N/A"
+      },
+      "communicationPreferences": {
+        "preferredMethods": [
+          "Text",
+          "Email"
+        ],
+        "notificationSettings": {
+          "billingAlerts": true,
+          "outageNotifications": true
+        }
+      },
+      "meteringData": {
+        "lastMeterReading": "2024-07-01: 1500 kWh",
+        "smartMeter": true,
+        "meterMaintenance": [
+          {
+            "date": "2024-06-25",
+            "service": "Calibration"
+          }
+        ]
+      },
+      "customerServiceInteractions": [
+        {
+          "date": "2024-07-02",
+          "interactionType": "Phone Call",
+          "notes": "Inquired about gas leak repair."
+        }
+      ],
+      "loginInformation": {
+        "username": "emily.johnson",
+        "passwordHash": "hashedPassword789",
+        "securityQuestions": [
+          {
+            "question": "What was the name of your first pet?",
+            "answerHash": "hashedAnswer789"
+          }
+        ],
+        "lastLogin": {
+          "time": "2024-07-04T10:00:00Z",
+          "ipAddress": "192.168.1.3"
+        }
+      },
+      "preferencesAndSettings": {
+        "paperlessBilling": true,
+        "autoPay": true,
+        "budgetBilling": {
+          "enabled": false,
+          "monthlyAmount": null
+        }
+      },
+      "energyEfficiencyProgram": {
+        "participation": "Energy Star Program",
+        "incentives": [
+          {
+            "type": "Discount",
+            "amount": "$30",
+            "description": "For upgrading to Energy Star appliances."
+          }
+        ]
+      },
+      "outageInformation": {
+        "recentOutages": [
+          {
+            "date": "2024-07-08",
+            "duration": "1.5 hours",
+            "restorationTime": "2024-07-08T14:00:00Z"
+          }
+        ],
+        "outageHistory": [
+          {
+            "date": "2024-06-18",
+            "duration": "2 hours",
+            "details": "Outage due to severe weather."
+          }
+        ]
+      }
+    }
+  ]
+}
+
+]
