@@ -1,7 +1,7 @@
 "use client";
 
 import Paper from "../../components/paper/Paper";
-
+import Footer from "../../components/footer/Footer";
 
 const papersData = [
     {
@@ -143,21 +143,27 @@ const twoPapers = [
 
 const BillingPage = () => {
     return (
-        <div className="flex flex-col min-h-screen bg-gray-100 pt-32 px-4 sm:pt-40 sm:px-8">
-            <div className="text-3xl sm:text-5xl font-extrabold">
-                Billing
+        <div className="flex flex-col min-h-screen bg-gray-100 pt-32 sm:pt-40">
+            {/* Adjust the main container padding */}
+            <div className="px-4 sm:px-8 lg:px-16">
+                <div className="text-3xl sm:text-5xl font-extrabold text-right sm:text-left">
+                    Billing
+                </div>
+                <br />
+                <div className="font-bold text-xl sm:text-2xl text-right sm:text-left">
+                    We make understanding and paying your bills easy
+                </div>
+                <br />
+                <div className="text-lg sm:text-2xl text-right sm:text-left">
+                    Explore a variety of simple and secure payment methods and options to fit your home or business needs. Need help reducing or paying your bill? We can help!
+                </div>
             </div>
-            <br />
-            <div className="font-bold text-xl sm:text-2xl">
-                We make understanding and paying your bills easy
-            </div>
-            <br />
-            <div className="text-lg sm:text-2xl">
-                Explore a variety of simple and secure payment methods and options to fit your home or business needs. Need help or reducing or paying your bill? We can help!
-            </div>
+            
+            {/* Continue with the rest of your content */}
             <div className="text-center text-2xl sm:text-4xl font-light my-5 sm:my-10">
                 How Can We Help Today
             </div>
+            
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                 {papersData.map((paper, index) => (
                     <Paper
@@ -168,6 +174,7 @@ const BillingPage = () => {
                 ))}
             </div>
 
+            {/* Rest of the content */}
             <div className="flex justify-center mt-5 sm:mt-10">
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-0">
                     <Paper
@@ -195,8 +202,11 @@ const BillingPage = () => {
                     paperLabel={twoPapers[1].paperLabel}
                 />
             </div>
+            <br />
+            <Footer />
         </div>
     );
 };
 
 export default BillingPage;
+

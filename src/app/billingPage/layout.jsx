@@ -2,7 +2,9 @@ import { getServerSession } from "next-auth";
 
 import { Inter } from "next/font/google";
 import "../../app/globals.css";
+// import Footer from "../../components/footer/Footer"; this wouldn't work, it would give me an error. footer is in the page.jsx
 import Navbar from "../../components/navbar/Navbar";
+import MobileNavbar from "../../components/navbar/MobleNavbar";
 import SessionProvider from "../components/SessionProvider.jsx";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,8 @@ export default async function RootLayout({ children }) {
     const session = await getServerSession();
     return (
         <SessionProvider session={session}>
+            <Navbar/>
+            {/* <MobileNavbar></MobileNavbar> */}
             <div>{children}</div>
         </SessionProvider>
     );

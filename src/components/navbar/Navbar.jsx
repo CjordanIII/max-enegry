@@ -15,12 +15,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-yellow-500 flex items-center justify-between p-4 fixed top-0 left-0 w-full shadow-md z-10">
+    <nav className="bg-yellow-500 p-4 fixed top-0 left-0 w-full shadow-md z-10">
       {/* logo */}
-      <div className="flex items-center">
+      <div className="flex items-center justify-between">
         <Image
-          src="/dom-white-logo.svg"
-          alt="Dominion Energy"
+          src="/MAXX-Energy-White.svg"
+          alt="Maxx Energy White Logo"
           className="ml-5"
           width={100}
           height={100}
@@ -38,7 +38,7 @@ const Navbar = () => {
         </ul>
 
         {/* buttons */}
-        <div className="flex space-x-4 hidden md:flex">
+        <div className="flex space-x-4 hidden md:flex ">
           <Link href="#">
             <Button style={contactUs.style} btnLabel={contactUs.btnLabel} />
           </Link>
@@ -61,7 +61,6 @@ const Navbar = () => {
             </button>
           )}
         </div>
-
       </div>
     </nav>
   );
