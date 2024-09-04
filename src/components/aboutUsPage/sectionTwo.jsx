@@ -25,7 +25,6 @@ const sectionTwo = () => {
           </ul>
         </div>
       </div>
-
     </div>
   );
 };
