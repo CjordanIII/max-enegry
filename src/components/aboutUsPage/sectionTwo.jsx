@@ -1,11 +1,8 @@
 "use client";
-import React from "react";
 
-
-const sectionTwo = () => {
+const SectionTwo = () => {
   return (
     <div className="bg-yellow-500">
-
       {/* Main Content */}
       <div className="bg-white text-center py-20">
         <h1 className="text-blue-900 font-bold text-4xl mb-6">Our Story</h1>
@@ -26,9 +23,8 @@ const sectionTwo = () => {
           </ul>
         </div>
       </div>
-
     </div>
   );
 };
 
-export default sectionTwo;
+export default SectionTwo;

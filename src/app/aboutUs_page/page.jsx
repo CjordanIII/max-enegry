@@ -1,14 +1,10 @@
-import sectionTwo from "../../components/aboutUsPage/sectionTwo";
-import sectionThree from "../../components/aboutUsPage/sectionThree";
-
 const AboutUsPage = () => {
-return (
+  return (
     <div>
-        <sectionTwo />
-        <sectionThree />
+      <sectionTwo />
+      <sectionThree />
     </div>
-    );
-
+  );
 };
 
-export default AboutUsPage
+export default AboutUsPage;
