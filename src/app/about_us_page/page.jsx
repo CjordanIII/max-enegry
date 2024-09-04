@@ -1,12 +1,11 @@
-import sectionTwo from "../../components/aboutUsPage/sectionTwo";
-import sectionThree from "../../components/aboutUsPage/sectionThree";
-
-
+"use client";
+import SectionTwo from "../../components/aboutUsPage/sectionTwo";
+import Footer from "../../components/footer/Footer";
 const AboutUsPage = () => {
   return (
     <div>
-      <sectionTwo />
-      <sectionThree />
+      <SectionTwo />
+      <Footer />
     </div>
   );
 };
