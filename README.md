@@ -51,3 +51,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 auth [video being used](https://www.youtube.com/watch?v=md65iBX5Gxg)
 
 # max-enegry
+
+## Docker info
+
+during production
+requests.get('http://host.docker.internal:5000')
