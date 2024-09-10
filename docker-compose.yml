@@ -1,6 +1,5 @@
 # docker-compose.yml
 
-version: "3.8"
 # db
 services:
   # config name
@@ -37,7 +36,7 @@ services:
   keycloak:
     #  container name (name of container when spun up)
     container_name: keycloak
-    # the image name of the docker registery 
+    # the image name of the docker registery
     image: quay.io/keycloak/keycloak:11.0.3
     # port being mapped to your localhost
     ports:
@@ -53,7 +52,7 @@ services:
       - KEYCLOAK_PASSWORD=password
 
   # mongo ui pannel (to see what is in the db)
-  # config name 
+  # config name
   mongo-express:
     # image that will be used for this config in this case mongo-expressd
     image: mongo-express
@@ -74,8 +73,23 @@ services:
     depends_on:
       mongo:
         condition: service_healthy
-    # keeps restarting if failded untill it does not
+      # keeps restarting if failded untill it does not
     restart: unless-stopped
-    # runs on mapped port 
+      # runs on mapped port
     ports:
       - "8081:8081"
+  app:
+    container_name: next
+    build:
+      context: ./
+      target: dev
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      mongo:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
