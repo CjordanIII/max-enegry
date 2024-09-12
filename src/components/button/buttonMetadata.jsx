@@ -9,6 +9,7 @@ export const startToday = {
 };
 export const handleStartTodayButtion = () => {
   "use client";
+  // connectMongo();
   console.log("working");
 };
 

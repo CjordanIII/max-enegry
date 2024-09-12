@@ -51,3 +51,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 auth [video being used](https://www.youtube.com/watch?v=md65iBX5Gxg)
 
 # max-enegry
+
+# commands to use while using docker
+
+### Logs logs inside of continer(next)
+
+```bash
+ docker logs -f next
+```
+
+### Starts/Stops container
+
+```bash
+docker compose up
+```
