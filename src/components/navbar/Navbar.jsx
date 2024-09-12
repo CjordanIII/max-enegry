@@ -19,8 +19,8 @@ const Navbar = () => {
       {/* logo */}
       <div className="flex items-center justify-between">
         <Image
-          src="/dom-white-logo.svg"
-          alt="Dominion Energy"
+          src="/MAXX-Energy-White.svg"
+          alt="Maxx Energy White Logo"
           className="ml-5"
           width={100}
           height={100}

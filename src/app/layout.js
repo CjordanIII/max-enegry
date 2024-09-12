@@ -19,7 +19,7 @@ export default async function RootLayout({ children }) {
       <body className={inter.className}>
         <SessionProvider session={session}>
           <main>
-            <NavMenu />
+            {/* <NavMenu /> */}
 
             {children}
           </main>
