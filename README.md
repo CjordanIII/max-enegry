@@ -65,3 +65,8 @@ auth [video being used](https://www.youtube.com/watch?v=md65iBX5Gxg)
 ```bash
 docker compose up
 ```
+
+# Mongodb documentation
+
+[Mongodb docs](https://mongoosejs.com/docs/guide.html)
+[Schema our db is based on ](https://app.eraser.io/workspace/tb5oJzL7Nin6LqqbzM0a)
