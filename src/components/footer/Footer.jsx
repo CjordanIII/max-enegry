@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="flex justify-center">
         <div className="flex flex-col w-96 justify-center items-center gap-8">
           <h1 className="text-5xl text-center text-white ">
-            Try Dominion Energy today!
+            Try MAXX Energy today!
           </h1>
           <p className="text-sm text-white text-center">
             Get started for free. Add your whole team as your needs grow.
@@ -41,9 +41,9 @@ const Footer = () => {
             <Link href="#" target="_blank" rel="noopener noreferrer">
               <Image
                 src="./icons/windows-logo.svg"
-                width={35}
+                width={35} 
                 height={35}
-                alt="android logo"
+                alt="Maxx Energy White Logo"
               />
             </Link>
             <Link href="#" target="_blank" rel="noopener noreferrer">
@@ -56,7 +56,7 @@ const Footer = () => {
             </Link>
           </div>
           <Image
-            src="./icons/website-white-logo.svg"
+            src="/MAXX-Energy-White.svg"
             width={200}
             height={200}
             alt="android logo"
